@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="graft.nuget.HelloChessService" Version="1.0.0.0" />
+  </ItemGroup>
+
+  <Target Name="CopyHelloChessServiceDll" AfterTargets="Build">
+    <ItemGroup>
+      <HelloChessServiceDll Include="$(NuGetPackageRoot)graft.nuget.hellochessservice/1.0.0/lib/net8.0/graft.nuget.HelloChessService.dll" />
+    </ItemGroup>
+    <Copy SourceFiles="@(HelloChessServiceDll)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" />
+  </Target>
+
+</Project>
