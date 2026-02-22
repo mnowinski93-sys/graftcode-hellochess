@@ -32,12 +32,12 @@ This repository contains a multi-project C# solution for a chess-related applica
      ```
 
 3. **Connect to Graftcode locally:**
-   - Create an account on [a link](graftcode.com).
-   - Add a new service on [a link](https://portal.graftcode.com/dashboard).
-   - Install Graftcode from [a link](graftcode.com).
+   - Create an account on [Graftcode.com](graftcode.com).
+   - Add a new service on [Graftcode dashboard](https://portal.graftcode.com/dashboard).
+   - Install Graftcode from [Graftcode.com](graftcode.com).
    - Go to install directory path `{your_install_directory}\GraftcodeGateway\bin`
    - Run command from command line, that should look like this: `./gg --projectKey <your_project_key> --modules <path-to-your-modules>`
-   - Check consol result, if GraftCode Gateway is up and running.
+   - Check consol result, if Graftcode Gateway is up and running.
 
 4. **Build the HelloChessConsumer solution:**
    - In terminal:
